@@ -2,21 +2,86 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <title>WAVE</title>
+    <title>HANABI</title>
     <meta name="viewport" content="width=device-width">
-    <!--今回はサンプルのためMarxというシンプルでそれでいて小奇麗なCSSを使っています-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/marx/2.0.4/marx.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="parallax.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </head>
 
-  <body>
+  <body class="top">
+    <header>HANABI</header>
     <nav>
       <ul>
-        <li><a href="index.html">トップ</a></li>
-        <li><a href="about.html">サイトについて</a></li>
-        <li><a href="contact.html">お問い合わせ</a></li>
+        <li><a href="index.html">TOP</a></li>
+        <li><a href=#about_me>ABOUT ME</a></li>
+        <li><a href=#work>WORK</a></li>
+        <li><a href=#contact>CONTACT</a></li>
+      </ul>
     </nav>
-    <figure>
-      <image src>
+    <figure class="hero">
+      <div class="hero-img">
     </figure>
+    <figure class="hero dot">
+      <img src="img/水玉素材3.svg">
+    </figure>
+    <h1>Portfolio Site About HANABI</h1>
+    <p class="hero">
+      <img src="img/circle.svg" alt=""><br>
+    </p>
+    <section id="about_me" class="fadein">
+      <h2>ABOUT ME</h2>
+      <figure class="profile">
+        <img src="img/KotAlooo.jpg">
+      </figure>
+      <div class="profile">
+        <h3>HANABI（西脇 宏太郎）</h3>
+          <p>
+          <br>
+            1995年生まれ埼玉出身
+          <br>
+          <br>
+            2019年現在、フリーランスのフロントエンドエンジニアとして活動中
+        </p>
+      </div>
+    </section>
+    <section id="work" class="fixed-bg bg01 fadein">
+      <!-- <div class="work"> -->
+        <h2>WORK</h2>
+        <article><a href="#"></a></article>
+        <article><a href="#"></a></article>
+        <article><a href="#"></a></article>
+        <article><a href="#"></a></article>
+      <!-- </div> -->
+    </section>
+    <section id="contact" class="fadein">
+      <h2>CONTACT</h2>
+      <p>お仕事のご依頼、お問い合わせは以下のフォームからお願いいたします。</p>
+      <form>
+        <p>
+          <label>
+            名前：
+            <input type="text" name="name">
+          </label>
+        </p>
+        <p>
+          <label>
+            メールアドレス：
+            <input type="email" name="mail">
+          </label>
+        </p>
+        <p>
+          <label>コメント：
+            <textarea name="comment"></textarea>
+          </label>
+        </p>
+        <p>
+          <input class="submit" type="submit" value="送信">
+        </p>
+      </form>
+    </section>
+    <footer>© HANABI</footer>
   </body>
 </html>
